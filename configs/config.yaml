@@ -1,0 +1,14 @@
+debug: true
+server:
+  port: 8080
+data:
+  database:
+    driver: mysql
+    # 连接字符串
+    connection: root:root@tcp(localhost:3306)/test?charset=utf8mb4&parseTime=True&loc=Local
+    # 最大连接数
+    max_open_connections: 10
+    # 最大空闲连接数
+    max_idle_connections: 10
+    # 每个连接的过期时间
+    max_life_seconds: 60
